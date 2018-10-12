@@ -1,0 +1,8 @@
+{
+  "name": "react-spoiler",
+  "author": "Abdullah",
+  "version": "0.0.1",
+  "description": "A spoiler component for reactjs.",
+  "main": "index.js",
+  "license": "MIT"
+}
