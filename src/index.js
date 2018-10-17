@@ -53,11 +53,7 @@ export default class ReactSpoiler extends React.Component {
 
     return (
       <Tag {...props}>
-        {show ? children : (
-          <button onClick={this.toggle}>
-            { spoilText }
-          </button>
-        )}
+        {children}
       </Tag>
     )
   }
