@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import ReactSpoiler from "./index";
+import ReactSpoiler from "./lib/index";
 
 export default class App extends Component {
   render() {
