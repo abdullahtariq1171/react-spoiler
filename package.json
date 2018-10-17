@@ -1,8 +1,16 @@
 {
   "name": "react-spoiler",
   "author": "Abdullah",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A spoiler component for reactjs.",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "demo": "nwb react run demo.js"
+  },
+  "devDependencies": {
+    "nwb": "^0.23.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  }
 }
