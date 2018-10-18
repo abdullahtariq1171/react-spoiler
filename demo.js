@@ -4,10 +4,15 @@ import ReactSpoiler from "./src/index";
 export default class App extends React.PureComponent {
   render() {
     return (
-      <div style={{textAlign: 'center'}}>
+      <div style={{ textAlign: 'center' }}>
         <div>
           <h2>With devault values</h2>
-          <ReactSpoiler>
+          <ReactSpoiler
+            style={{ color: 'orange' }}
+            onClick={_ => console.log("onClick")}
+            onMouseEnter={_ => console.log("onMouseEnter")}
+            onMouseLeave={_ => console.log("onMouseLeave")}
+          >
             <h1> Sample Text </h1>
           </ReactSpoiler>
         </div>
@@ -25,7 +30,7 @@ export default class App extends React.PureComponent {
 
         <div>
           <h2>with tag='h1'</h2>
-          <ReactSpoiler tag='h1'>
+          <ReactSpoiler tag='h1' style={{color: 'blue'}} >
             Sample Text
           </ReactSpoiler>
         </div>

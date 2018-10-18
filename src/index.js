@@ -20,10 +20,14 @@ export default class ReactSpoiler extends React.Component {
 
   onMouseEnter(e) {
     this.setState({ isHovering: true })
+
+    if(this.props.onMouseEnter) this.props.onMouseEnter(e)
   }
 
   onMouseLeave(e) {
     this.setState({ isHovering: false })
+
+    if (this.props.onMouseLeave) this.props.onMouseLeave(e)
   }
 
   render() {
@@ -32,23 +36,23 @@ export default class ReactSpoiler extends React.Component {
       tag: Tag = 'div',
       blur = 4,
       hoverBlur = blur / 2,
-      children,
+      ...restProps
     } = this.props
 
     const { show, isHovering } = this.state
 
     const props = {
+      style: {},
+      ...restProps,
       onClick: this.onClick.bind(this),
       onMouseEnter: this.onMouseEnter.bind(this),
-      onMouseLeave: this.onMouseLeave.bind(this),
-      children,
-      style: {}
+      onMouseLeave: this.onMouseLeave.bind(this)
     }
 
     if (!show) {
       props.style = {
         ...props.style,
-        filter: `blur(${isHovering? hoverBlur : blur }px)`
+        filter: `blur(${isHovering ? hoverBlur : blur }px)`
       }
     }
 
