@@ -1,6 +1,6 @@
 {
   "name": "react-spoiler",
-  "author": "Abdullah",
+  "author": "Abdullah <abdullahtariq52@gmail.com> (https://github.com/abdullahtariq1171)",
   "version": "0.1.2",
   "description": "A spoiler component for reactjs.",
   "main": "lib/index.js",
@@ -26,5 +26,19 @@
     "nwb": "^0.23.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
-  }
+  },
+  "repository": "abdullahtariq1171/react-spoiler",
+  "bugs": {
+    "url": "https://github.com/abdullahtariq1171/react-spoiler/issues"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-spoiler",
+    "spoiler",
+    "react-component",
+    "component",
+    "ui",
+    "view"
+  ]
 }
