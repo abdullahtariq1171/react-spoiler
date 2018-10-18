@@ -35,6 +35,13 @@ export default class App extends React.PureComponent {
           </ReactSpoiler>
         </div>
 
+        <hr />
+
+        <div>
+          <h2>with img tag</h2>
+          <ReactSpoiler tag='img' src='https://picsum.photos/200/300' />
+        </div>
+
       </div>
     )
   }
