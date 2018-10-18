@@ -10,6 +10,10 @@ export default class ReactSpoiler extends React.Component {
       show: props.show || false,
       isHovering: false
     }
+
+    this.onClick = this.onClick.bind(this)
+    this.onMouseEnter = this.onMouseEnter.bind(this)
+    this.onMouseLeave = this.onMouseLeave.bind(this)
   }
 
   onClick(e) {
@@ -44,9 +48,9 @@ export default class ReactSpoiler extends React.Component {
     const props = {
       style: {},
       ...restProps,
-      onClick: this.onClick.bind(this),
-      onMouseEnter: this.onMouseEnter.bind(this),
-      onMouseLeave: this.onMouseLeave.bind(this)
+      onClick: this.onClick,
+      onMouseEnter: this.onMouseEnter,
+      onMouseLeave: this.onMouseLeave
     }
 
     if (!show) {
