@@ -1,3 +1,6 @@
+
+[![npm version](https://badge.fury.io/js/react-spoiler.svg)](https://badge.fury.io/js/react-spoiler)
+
 # react-spoiler
 A spoiler component for reactjs
 
