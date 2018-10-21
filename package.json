@@ -1,7 +1,7 @@
 {
   "name": "react-spoiler",
   "author": "Abdullah <abdullahtariq52@gmail.com> (https://github.com/abdullahtariq1171)",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A spoiler component for reactjs.",
   "main": "lib/index.js",
   "license": "MIT",
