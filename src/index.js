@@ -40,6 +40,7 @@ export default class ReactSpoiler extends React.Component {
       tag: Tag = 'div',
       blur = 4,
       hoverBlur = blur / 2,
+      show: _,
       ...restProps
     } = this.props
 
