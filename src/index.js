@@ -1,6 +1,5 @@
 "use strict";
-const React = require('react');
-const ReactDom = require('react');
+import React from 'react'
 
 export default class ReactSpoiler extends React.Component {
   constructor(props) {
