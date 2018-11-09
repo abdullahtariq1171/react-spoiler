@@ -3,13 +3,16 @@
   "author": "Abdullah <abdullahtariq52@gmail.com> (https://github.com/abdullahtariq1171)",
   "version": "0.3.1",
   "description": "A spoiler component for reactjs.",
-  "main": "lib/index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
   "license": "MIT",
   "scripts": {
     "watch": "babel src --copy-files --watch --out-dir lib",
     "demo": "nwb react run demo.js",
     "prepublish": "yarn build",
-    "build": "babel src -d lib  --presets minify",
+    "build-old": "babel src -d lib  --presets minify",
+    "build": "rollup -c",
     "test": "jest __tests__"
   },
   "babel": {
@@ -35,7 +38,11 @@
     "nwb": "^0.23.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-test-renderer": "^16.5.2"
+    "react-test-renderer": "^16.5.2",
+    "rollup": "^0.67.0",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^3.4.0"
   },
   "repository": "abdullahtariq1171/react-spoiler",
   "bugs": {
@@ -50,5 +57,8 @@
     "component",
     "ui",
     "view"
+  ],
+  "files": [
+    "dist"
   ]
 }

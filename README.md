@@ -17,13 +17,13 @@ using npm
 ```
 import ReactSpoiler from "react-spoiler";
 
-
 <ReactSpoiler>
   <h1>ReactSpoiler</h1>
   <p> Click/Hover me to the magic! </p>
 </ReactSpoiler>
 
 ```
+
 
 ## Props
 
@@ -35,3 +35,7 @@ import ReactSpoiler from "react-spoiler";
 | hoverBlur  | number  | `blur`/2   | blur value on hovered |   
 
 **Note**: all other props will be passed to `tag` element.
+
+
+## License
+    MIT
