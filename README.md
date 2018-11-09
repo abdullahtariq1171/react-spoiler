@@ -21,9 +21,46 @@ import ReactSpoiler from "react-spoiler";
   <h1>ReactSpoiler</h1>
   <p> Click/Hover me to the magic! </p>
 </ReactSpoiler>
-
 ```
 
+## Quick Start With [unpkg](https://unpkg.com) CDN
+
+Simply include following script
+
+```
+<script src="https://unpkg.com/react-spoiler@0.4.0-alpha-3/dist/index.umd.js"></script>
+```
+Complete demo exapmle using cdn
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React Spoiler Example</title>
+    <script src="https://unpkg.com/react@latest/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@latest/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/babel-standalone@latest/babel.min.js"></script>
+
+    <script src="https://unpkg.com/react-spoiler@latest/dist/index.umd.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+      ReactDOM.render(
+        <ReactSpoiler>
+          <h1>ReactSpoiler</h1>
+          <p> Click/Hover me to the magic! </p>
+        </ReactSpoiler>,
+        document.getElementById('root')
+      );
+
+    </script>
+  </body>
+</html>
+```
 
 ## Props
 
@@ -35,7 +72,6 @@ import ReactSpoiler from "react-spoiler";
 | hoverBlur  | number  | `blur`/2   | blur value on hovered |   
 
 **Note**: all other props will be passed to `tag` element.
-
 
 ## License
     MIT
