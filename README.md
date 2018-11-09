@@ -28,7 +28,7 @@ import ReactSpoiler from "react-spoiler";
 Simply include following script
 
 ```
-<script src="https://unpkg.com/react-spoiler@0.4.0-alpha-3/dist/index.umd.js"></script>
+<script src="https://unpkg.com/react-spoiler@latest/dist/index.umd.js"></script>
 ```
 Complete demo exapmle using cdn
 ```
