@@ -4,6 +4,8 @@
 # react-spoiler
 A spoiler component for reactjs
 
+#### Demo https://827r7v3kxj.codesandbox.io/
+
 ### Install
 using yarn  
 `yard add react-spoiler`

@@ -1,5 +1,6 @@
 /node_modules
 /lib
+/dist
 /node_modules
 /umd
 npm-debug.log*
