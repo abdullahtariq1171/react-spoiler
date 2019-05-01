@@ -8,7 +8,7 @@ A spoiler component for reactjs
 
 ### Install
 using yarn  
-`yard add react-spoiler`
+`yarn add react-spoiler`
 
 using npm  
 `npm install react-spoiler`
@@ -32,7 +32,7 @@ Simply include following script
 ```
 <script src="https://unpkg.com/react-spoiler@latest/dist/index.umd.js"></script>
 ```
-Complete demo exapmle using cdn
+Complete demo example using cdn
 ```
 <!DOCTYPE html>
 <html>
