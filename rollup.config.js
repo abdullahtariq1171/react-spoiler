@@ -15,6 +15,7 @@ export default [
       file: pkg.browser,
       format: 'umd'
     },
+    external: ['react'],
     plugins: [
       replace({
         'process.env.NODE_ENV': JSON.stringify( 'production' )
