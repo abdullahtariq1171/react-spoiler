@@ -46,7 +46,6 @@ export default class ReactSpoiler extends React.PureComponent {
     const { show, isHovering } = this.state
 
     const props = {
-
       ...restProps,
       onClick: this.onClick,
       onMouseEnter: this.onMouseEnter,

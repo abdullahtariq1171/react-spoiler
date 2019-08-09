@@ -14,7 +14,8 @@
     "publish:beta": "npm publish --tag=next",
     "build-old": "babel src -d lib  --presets minify",
     "build": "rollup -c",
-    "test": "jest __tests__"
+    "test": "jest __tests__",
+    "test:watch": "jest __tests__ --watch"
   },
   "babel": {
     "presets": [
