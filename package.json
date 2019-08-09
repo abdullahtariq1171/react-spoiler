@@ -25,6 +25,10 @@
   "jest": {
     "setupTestFrameworkScriptFile": "./setupTests.js"
   },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
