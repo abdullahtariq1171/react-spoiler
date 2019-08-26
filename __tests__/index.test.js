@@ -72,7 +72,7 @@ it('removes the blur value on click', () => {
 
   expect(wrapper.prop('style').filter).toBe('blur(10px)')
   wrapper.simulate('click')
-  expect(wrapper.prop('style').filter).not.toBeTruthy()
+  expect((wrapper.prop('style') || {}).filter).not.toBeTruthy()
 })
 
 it('updates the blur value on hover', () => {

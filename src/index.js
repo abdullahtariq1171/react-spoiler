@@ -1,7 +1,7 @@
 "use strict";
 import React from 'react'
 
-export default class ReactSpoiler extends React.Component {
+export default class ReactSpoiler extends React.PureComponent {
   constructor(props) {
     super(props)
 
@@ -46,7 +46,6 @@ export default class ReactSpoiler extends React.Component {
     const { show, isHovering } = this.state
 
     const props = {
-      style: {},
       ...restProps,
       onClick: this.onClick,
       onMouseEnter: this.onMouseEnter,
